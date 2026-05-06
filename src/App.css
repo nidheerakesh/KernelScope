@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+  --color-fuchsia-500: #d946ef;
+  --color-green-400: #4ade80;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased overflow-hidden selection:bg-cyan-500/30;
+  }
+}
